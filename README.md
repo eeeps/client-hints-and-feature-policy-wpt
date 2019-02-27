@@ -1,4 +1,6 @@
-## Client Hints / Feature Policy tests
+## Client Hints + Feature Policy tests
+
+Some Web Platform Tests for Client Hints + Feature Policy
 
 - [ ] **Enabling third party** `<meta http-equiv="Accept-CH" content="DPR">` + `Feature-Policy: ch-dpr https://third.party` + `<img src="https://third.party/resource">` → should send `DPR`
 - [ ] **No feature policy at all? Third party disabled by default** `<meta http-equiv="Accept-CH" content="DPR">` + no `Feature-Policy` + `<img src="https://third.party/resource">` → should not send `DPR`
